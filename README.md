@@ -10,7 +10,7 @@ You could build this program as a command line tool.
 
 From program directory type: 
 ``` 
-go build -o gorescue main.go
+go build -o surescue main.go
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ go build -o gorescue main.go
 Then type from same directory:
 Change su_username accordingly
 ``` 
-./gorescue su_username
+./surescue su_username
 ```
 
 ### Author
