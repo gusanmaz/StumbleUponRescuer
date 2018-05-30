@@ -162,10 +162,10 @@ func GetUserInfo(url string) (UserInfo, error) {
 }
 
 func main() {
-	if len(os.Args) != 2{
+	if len(os.Args) != 2 {
 		fmt.Println("Wrong number of arguments!")
 		fmt.Println("Example Usage: surescue su_username")
-		os.Exit(0)
+		os.Exit(1)
 	}
 	userName := os.Args[1]
 	userURL := fmt.Sprintf("https://www.stumbleupon.com/api/v2_0/user/%s?version=2", userName)
@@ -173,7 +173,7 @@ func main() {
 
 	if err != nil {
 		fmt.Println("User could not be found!")
-		os.Exit(0)
+		os.Exit(1)
 	}
 	userID := suUserData.User.Userid
 	likeCnt, _ := strconv.Atoi(suUserData.User.LikesCount)
