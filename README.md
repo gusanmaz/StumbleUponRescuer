@@ -6,7 +6,7 @@ As a SU user you may wish to save your data. This small program takes your SU us
 
 ## Build
 
-You could build this program as a command line tool. 
+You could build this program as a command line tool.  Go compiler should be installed to build this program.
 
 From program directory type: 
 ``` 
@@ -20,6 +20,12 @@ Then type from the same directory:
 ./surescue su_username
 ```
 Change su_username accordingly
+
+## Caveats
+
+* Only publicly visible SU accounts likes data could be extracted using the tool. If your account is private, before using the tool change your account's visibility to public.
+* The tool is not tested for accounts that have over 12K likes. 
+
 
 ### Author
 Guvenc Usanmaz
